@@ -52,8 +52,8 @@ window/integer_resolution_handler/base_width=512
 window/integer_resolution_handler/base_height=288
 window/size/width=512
 window/size/height=288
-window/size/fullscreen=true
 window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [editor_plugins]
 

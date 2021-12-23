@@ -18,7 +18,7 @@ func _physics_process(delta):
 			var bullet : Bullet = bullet_system.get_bullet(bullet_index)
 			var facing_internal = facing
 			if facing == Vector2.ZERO:
-				facing_internal = Vector2.RIGHT.rotated(rotation)
-			bullet.start(position, facing_internal.normalized() * bullet_speed)
+				facing_internal = Vector2.RIGHT.rotated(global_rotation)
+			bullet.start(global_position, facing_internal.normalized() * bullet_speed)
 	else:
 		fire_clock -= delta
